@@ -1,1 +1,20 @@
+<!DOCTYPE html>
 
+<head>
+    <title>Javascript testing</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <p>The central theme of Mary Shelley's Frankenstien is clearly laid out in the first few pages of the text(1).</p>
+    <script>
+        // Adding a footnote to text
+
+        // Use .createElement to add a new p element to our document called footNote
+        var footNote = document.createElement("p");
+        // Use .innerHTML to edit what footNote contains/will say
+        footNote.innerHTML = "1. From page 5 of <i>Frankenstien</i>";
+        // Use document.parameter.appendChild to add this to the lowest part of the document under that parameter
+        document.body.appendChild(footNote);
+    </script>
+</body>
